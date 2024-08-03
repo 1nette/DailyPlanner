@@ -1,13 +1,16 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import { Routes, Route } from "react-router";
+import StartPage from "./pages/StartPage";
+import "./App.css";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-      </header>
-    </div>
-  );
-}
+const App = () => {
+	return (
+		<div className="app">
+			<Routes>
+				<Route path="/" element={<StartPage />} />
+			</Routes>
+		</div>
+	);
+};
 
 export default App;
